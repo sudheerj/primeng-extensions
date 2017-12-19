@@ -1,6 +1,6 @@
 {
   "name": "primeng-extensions",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "author": {
     "name": "Sudheer Jonna",
@@ -47,7 +47,7 @@
   "scripts": {
     "tsc": "tsc",
     "lint": "tslint -c tslint.json src/**/*.ts",
-    "clean": "del-cli aot components/**/*.d.ts components/**/*.js src/**/*.js.map components/**/*.metadata.json",
+    "clean": "del-cli aot components/wizard/**/*.d.ts components/wizard/**/*.js src/**/*.js.map components/wizard/**/*.metadata.json",
     "prengc": "npm run clean",
     "ngc": "ngc -p tsconfig.json",
     "update": "npm run ngc && npm version minor && npm publish && npm run clean"

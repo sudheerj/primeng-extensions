@@ -1,6 +1,6 @@
 {
   "name": "primeng-extensions",
-  "version": "0.2.0",
+  "version": "0.0.9",
   "license": "MIT",
   "author": {
     "name": "Sudheer Jonna",
@@ -35,7 +35,8 @@
     "rxjs": "~5.5.2",
     "zone.js": "~0.8.18",
     "primeng": "~5.0.2",
-    "font-awesome": "~4.7.0"
+    "font-awesome": "~4.7.0",
+    "qrious": "^4.0.2"
   },
   "devDependencies": {
     "@types/node": "~8.0.13",
@@ -50,6 +51,6 @@
     "clean": "del-cli aot components/**/*.d.ts components/**/*.js src/**/*.js.map components/**/*.metadata.json",
     "prengc": "npm run clean",
     "ngc": "ngc -p tsconfig.json",
-    "update": "npm run ngc && npm version minor && npm publish && npm run clean"
+    "update": "npm run ngc && npm version patch && npm publish && npm run clean"
   }
 }

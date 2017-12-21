@@ -3,7 +3,7 @@ import {CommonModule} from '@angular/common';
 import {QRCode} from './qrcode.component';
 
 @NgModule({
-    imports: [CommonModule, QRCode],
+    imports: [CommonModule],
     exports: [QRCode],
     declarations: [QRCode]
 })

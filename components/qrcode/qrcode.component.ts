@@ -10,8 +10,7 @@ import {
     ViewChild
 } from '@angular/core';
 import {CommonModule} from '@angular/common';
-
-declare var Qrious: any;
+import Qrious from 'qrious';
 
 @Component({
     selector: 'pe-qrcode',

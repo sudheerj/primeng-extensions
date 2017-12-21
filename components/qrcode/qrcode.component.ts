@@ -9,8 +9,8 @@ import {
     OnInit,
     ViewChild
 } from '@angular/core';
-import {CommonModule} from '@angular/common';
-import Qrious from 'qrious';
+
+declare var Qrious: any;
 
 @Component({
     selector: 'pe-qrcode',
@@ -42,15 +42,23 @@ export class QRCode implements OnDestroy, OnInit{
 
     qrcode: null;
 
-    constructor(public el: ElementRef) {
+    initialized: boolean;
 
+    constructor(public el: ElementRef) {
+        this.initialized = false;
     }
 
     ngOnInit() {
-        this.init();
+    }
+
+    ngAfterViewChecked() {
+        if(!this.initialized) {
+            this.init();
+        }
     }
 
     init() {
+        this.initialized = true;
         let qrObject = {
             element: this.containerViewChild.nativeElement,
             background: this.background,
@@ -68,6 +76,7 @@ export class QRCode implements OnDestroy, OnInit{
 
     ngOnDestroy() {
         this.qrcode = null;
+        this.initialized = false;
     }
 
 }

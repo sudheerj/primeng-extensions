@@ -35,12 +35,13 @@ export class Badge implements OnDestroy, OnInit{
 
     @Input() badgeClass: string;
 
-
     constructor(public el: ElementRef) {
     }
 
     data() {
-        if(this.dot) return;
+        if(this.dot) {
+            return;
+        }
         if(typeof this.value === 'number' && typeof this.max === 'number') {
             return this.max < this.value ? `${this.max}+` : this.value;
         } else {
@@ -53,6 +54,10 @@ export class Badge implements OnDestroy, OnInit{
     }
 
     ngOnDestroy() {
+    }
+
+    ngOnInit() {
+
     }
 
 }

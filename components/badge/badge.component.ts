@@ -4,6 +4,7 @@ import {
     OnDestroy,
     Input,
     OnInit,
+    ViewEncapsulation
 } from '@angular/core';
 
 
@@ -16,7 +17,11 @@ import {
                 [ngClass]="{'ui-widget ui-widget-content ui-corner-all':true, badgeClass:true, 'fixed': true, 'dot': dot }">
             {{data}}
       </span>
-    </div>`
+    </div>`,
+    styleUrls: [
+        './badge.css'
+    ],
+    encapsulation: ViewEncapsulation.None,
 })
 export class Badge implements OnDestroy, OnInit{
 

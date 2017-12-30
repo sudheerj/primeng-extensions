@@ -19,7 +19,7 @@ import {
       </span>
     </div>`,
     styleUrls: [
-        './badge.css'
+        'badge.css'
     ],
     encapsulation: ViewEncapsulation.None,
 })

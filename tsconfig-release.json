@@ -1,10 +1,11 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "outDir": "./dist/out-tsc",
+    "outDir": "./components",
     "baseUrl": "src",
+    "rootDir": "src/app/components",
     "sourceMap": true,
-    "declaration": false,
+    "declaration": true,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -16,5 +17,8 @@
       "es2016",
       "dom"
     ]
-  }
+  },
+  "include": [
+      "src/app/components/**/*"
+  ]
 }

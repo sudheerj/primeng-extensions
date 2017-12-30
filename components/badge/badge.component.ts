@@ -13,8 +13,8 @@ import {
     template: `<div class="ui-badge ui-position">
         <ng-content></ng-content>
         <span *ngIf="display()"
-                class="ui-badge-content" [ngStyle]="{'background-color': backgroundColor}"
-                [ngClass]="{'ui-widget ui-widget-content ui-corner-all':true, badgeClass, 'fixed': true, 'dot': dot }">
+                [class]="badgeClass" [ngStyle]="{'background-color': backgroundColor}"
+                [ngClass]="{'ui-widget ui-widget-content ui-corner-all ui-badge-content':true,'fixed': true, 'dot': dot }">
             {{data}}
       </span>
     </div>`,

@@ -12,9 +12,9 @@ import {
     selector: 'pe-badge',
     template: `<div class="ui-badge ui-position">
         <ng-content></ng-content>
-        <span ngIf="display()"
-                class="ui-badge-content" ngStyle="{'background-color': backgroundColor}"
-                [ngClass]="{'ui-widget ui-widget-content ui-corner-all':true, badgeClass:true, 'fixed': true, 'dot': dot }">
+        <span *ngIf="display()"
+                class="ui-badge-content" [ngStyle]="{'background-color': backgroundColor}"
+                [ngClass]="{'ui-widget ui-widget-content ui-corner-all':true, badgeClass, 'fixed': true, 'dot': dot }">
             {{data}}
       </span>
     </div>`,
@@ -35,7 +35,6 @@ export class Badge implements OnDestroy, OnInit{
 
     @Input() badgeClass: string;
 
-    initialized: boolean;
 
     constructor(public el: ElementRef) {
     }
@@ -54,8 +53,6 @@ export class Badge implements OnDestroy, OnInit{
     }
 
     ngOnDestroy() {
-        this.qrcode = null;
-        this.initialized = false;
     }
 
 }

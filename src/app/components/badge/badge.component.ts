@@ -18,9 +18,6 @@ import {
             {{data}}
       </span>
     </div>`,
-    styleUrls: [
-        'badge.css'
-    ],
     encapsulation: ViewEncapsulation.None,
 })
 export class Badge implements OnDestroy, OnInit{

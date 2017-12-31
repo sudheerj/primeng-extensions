@@ -36,11 +36,6 @@ npm-debug.log
 testem.log
 /typings
 
-# themes
-/src/assets/components/themes/**/*.css
-/src/assets/components/themes/**/*.map
-!/src/assets/components/themes/bootstrap/theme.css
-
 # e2e
 /e2e/*.js
 /e2e/*.map

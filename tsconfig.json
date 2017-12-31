@@ -1,8 +1,12 @@
 {
   "compilerOptions": {
+    "outDir": "components",
+    "rootDir": "src/app/components",
     "module": "es2015",
     "moduleResolution": "node",
     "target": "es5",
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -12,6 +16,9 @@
       "dom"
     ]
   },
+  "include": [
+    "src/app/components/**/*"
+  ],
   "compileOnSave": false,
   "buildOnSave": false,
   "types": [

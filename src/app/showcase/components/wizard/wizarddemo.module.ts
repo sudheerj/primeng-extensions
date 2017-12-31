@@ -6,20 +6,23 @@ import {WizardModule} from '../../../components/wizard/wizard.module';
 import {ButtonModule} from 'primeng/components/button/button';
 import {InputTextModule} from 'primeng/components/inputtext/inputtext';
 import {GrowlModule} from 'primeng/components/growl/growl';
+import {FormsModule}    from '@angular/forms';
 import {CodeHighlighterModule} from 'primeng/components/codehighlighter/codehighlighter';
 
 @NgModule({
-	imports: [
-		CommonModule,
-		WizardDemoRoutingModule,
-		WizardModule,
-        ButtonModule,
-		InputTextModule,
-        GrowlModule,
-        CodeHighlighterModule
-	],
-	declarations: [
-		WizardDemo
-	]
+  imports: [
+    CommonModule,
+    WizardDemoRoutingModule,
+    WizardModule,
+    ButtonModule,
+    InputTextModule,
+    GrowlModule,
+    FormsModule,
+    CodeHighlighterModule
+  ],
+  declarations: [
+    WizardDemo
+  ]
 })
-export class WizardDemoModule {}
+export class WizardDemoModule {
+}

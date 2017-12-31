@@ -5,17 +5,20 @@ import {BadgeDemo} from './badgedemo';
 import {BadgeDemoRoutingModule} from './badgedemo-routing.module';
 import {BadgeModule} from '../../../components/badge/badge.module';
 import {CodeHighlighterModule} from 'primeng/components/codehighlighter/codehighlighter';
+import {ButtonModule} from 'primeng/components/button/button';
 
 @NgModule({
-	imports: [
-		CommonModule,
-        FormsModule,
-		BadgeDemoRoutingModule,
-        BadgeModule,
-        CodeHighlighterModule
-	],
-	declarations: [
-		BadgeDemo
-	]
+  imports: [
+    CommonModule,
+    FormsModule,
+    BadgeDemoRoutingModule,
+    BadgeModule,
+    ButtonModule,
+    CodeHighlighterModule
+  ],
+  declarations: [
+    BadgeDemo
+  ]
 })
-export class BadgeDemoModule {}
+export class BadgeDemoModule {
+}

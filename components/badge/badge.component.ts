@@ -18,7 +18,7 @@ import {
             {{data}}
       </span>
     </div>`,
-    encapsulation: ViewEncapsulation.None,
+    encapsulation: ViewEncapsulation.None
 })
 export class Badge implements OnDestroy, OnInit{
 

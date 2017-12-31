@@ -3,8 +3,6 @@
     "module": "es2015",
     "moduleResolution": "node",
     "target": "es5",
-    "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true,
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,

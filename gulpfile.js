@@ -22,7 +22,7 @@ gulp.task('build-css-prod', function() {
     .pipe(concat('primeng-extensions.css'))
     .pipe(gulp.dest('resources'))
     .pipe(uglifycss({"uglyComments": true}))
-    .pipe(rename('primeng.min.css'))
+    .pipe(rename('primeng-extensions.min.css'))
     .pipe(gulp.dest('resources'));
 });
 
@@ -46,5 +46,5 @@ gulp.task('clean', function() {
 });
 
 //Building project with run sequence
-gulp.task('build-assets', ['clean','copy-component-css', 'build-css-prod', 'images', 'themes']);
+gulp.task('build-assets', ['clean','copy-component-css', 'build-css-prod', 'images']);
 

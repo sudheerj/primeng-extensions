@@ -1,20 +1,29 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
-    "outDir": "./dist/out-tsc",
-    "baseUrl": "src",
-    "sourceMap": true,
-    "declaration": false,
+    "module": "es2015",
     "moduleResolution": "node",
+    "target": "es5",
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
+    "declaration": true,
     "lib": [
-      "es2016",
+      "es2015",
       "dom"
     ]
+  },
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "types": [
+    "node"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "angularCompilerOptions": {
+    "genDir": "aot",
+    "skipMetadataEmit": false,
+    "annotationsAs": "decorators"
   }
-}

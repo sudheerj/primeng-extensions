@@ -40,11 +40,16 @@ gulp.task('images', function() {
 });
 
 
+gulp.task('themes', function() {
+  return gulp.src(['src/assets/components/themes/**/*'])
+    .pipe(gulp.dest('resources/themes'));
+});
+
 //Cleaning previous gulp tasks from project
 gulp.task('clean', function() {
 	del(['resources']);
 });
 
 //Building project with run sequence
-gulp.task('build-assets', ['clean','copy-component-css', 'build-css-prod', 'images']);
+gulp.task('build-assets', ['clean','copy-component-css', 'build-css-prod', 'images', 'themes']);
 

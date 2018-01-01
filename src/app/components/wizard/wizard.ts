@@ -12,7 +12,6 @@ import {
 } from '@angular/core';
 import {MenuItem} from 'primeng/components/common/api';
 import {CommonModule} from '@angular/common';
-import { BrowserModule } from '@angular/platform-browser';
 import {ButtonModule} from 'primeng/components/button/button';
 import {StepsModule} from 'primeng/components/steps/steps';
 
@@ -140,7 +139,7 @@ export class StepsComponent implements AfterContentInit, OnChanges {
 }
 
 @NgModule({
-  imports: [CommonModule, ButtonModule, StepsModule, BrowserModule],
+  imports: [CommonModule, ButtonModule, StepsModule],
   exports: [StepComponent, StepsComponent],
   declarations: [StepComponent, StepsComponent]
 })

@@ -10,8 +10,7 @@ import {
   ViewChild
 } from '@angular/core';
 import {CommonModule} from '@angular/common';
-
-declare var QRious: any;
+import Qrious from 'qrious';
 
 @Component({
   selector: 'pe-qrcode',
@@ -73,7 +72,7 @@ export class QRCode implements OnDestroy, OnInit {
       size: this.size,
       value: this.value
     };
-    this.qrcode = new QRious(qrObject);
+    this.qrcode = new Qrious(qrObject);
   }
 
   ngOnDestroy() {

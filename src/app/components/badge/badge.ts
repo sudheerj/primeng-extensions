@@ -16,14 +16,14 @@ import {CommonModule} from '@angular/common';
         <span *ngIf="display()"
                 [class]="badgeClass" [ngStyle]="{'background-color': backgroundColor}"
                 [ngClass]="{'ui-widget ui-widget-content ui-corner-all ui-badge-content':true,'fixed': true, 'dot': dot }">
-            {{data}}
+            {{data()}}
       </span>
     </div>`,
     encapsulation: ViewEncapsulation.None,
 })
 export class Badge implements OnDestroy, OnInit{
 
-    @Input() value: string;
+    @Input() value: any;
 
     @Input() max: number;
 
@@ -48,7 +48,7 @@ export class Badge implements OnDestroy, OnInit{
     }
 
     display() {
-        return (this.data || this.dot);
+        return ( this.data() || this.dot);
     }
 
     ngOnDestroy() {
@@ -59,7 +59,6 @@ export class Badge implements OnDestroy, OnInit{
     }
 
 }
-
 
 @NgModule({
   imports: [CommonModule],

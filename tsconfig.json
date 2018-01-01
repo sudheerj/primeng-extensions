@@ -1,35 +1,20 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "outDir": "components",
-    "rootDir": "src/app/components",
-    "module": "es2015",
-    "moduleResolution": "node",
-    "target": "es5",
-    "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true,
+    "outDir": "./dist/out-tsc",
+    "baseUrl": "src",
     "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "declaration": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
     "lib": [
-      "es2015",
+      "es2016",
       "dom"
     ]
-  },
-  "include": [
-    "src/app/components/**/*"
-  ],
-  "compileOnSave": false,
-  "buildOnSave": false,
-  "types": [
-    "node"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
-  "angularCompilerOptions": {
-    "genDir": "aot",
-    "skipMetadataEmit": false,
-    "annotationsAs": "decorators"
   }
 }

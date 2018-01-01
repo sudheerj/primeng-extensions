@@ -7,8 +7,7 @@ import {
   Output,
   EventEmitter,
   OnInit,
-  ViewChild,
-  NgModule
+  ViewChild
 } from '@angular/core';
 import {CommonModule} from '@angular/common';
 

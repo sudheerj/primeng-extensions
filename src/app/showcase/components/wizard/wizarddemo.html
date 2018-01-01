@@ -6,15 +6,15 @@
 </div>
 
 <div class="content-section implementation">
-    <pe-steps [(activeIndex)]="activeIndex" (change)="onChange($event)">
-        <pe-step label="First Step">
+    <pe-steps [(activeIndex)]="activeIndex" (change)="onChange($event)" >
+        <pe-step label="First Step" styleClass="layout-format" >
             <label for="firstname">First Name:</label>
             <input id="firstname" name="firstname" type="text"
                    pInputText [(ngModel)]="firstName"/>
             <button pButton label="Go" (click)="next()"></button>
         </pe-step>
 
-        <pe-step label="Second Step">
+        <pe-step label="Second Step" styleClass="layout-format" >
             <label for="lastname">Last Name:</label>
             <input id="lastname" name="lastname" type="text"
                    pInputText [(ngModel)]="lastName"/>
@@ -31,3 +31,13 @@
 
     <p-growl [value]="msgs"></p-growl>
 </div>
+<style>
+  .layout-format {
+    margin: auto;
+    border: 1px solid #ccc !important;
+    border-radius: 16px !important;
+    padding: 10px 60px 60px 60px;
+    width: 320px;
+    height: 300px;
+  }
+</style>

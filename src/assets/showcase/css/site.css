@@ -40,20 +40,22 @@ body {
 }
 
 #layout-topbar {
-    background-color: #20272a;
-    box-sizing: border-box;
-    display: block;
-    padding: 0;
-    height: 70px;
-    box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9997;
-    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
-	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(to left, #DBB1CC, #C0067D);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  display: block;
+  padding: 0;
+  height: 70px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9997;
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 #layout-topbar .menu-button {
@@ -190,7 +192,7 @@ body {
     background-color: #ffffff;
     overflow-x: hidden;
     overflow-y: auto;
-    width: 300px;
+    width: 150px;
 	-moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 	-webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
@@ -293,7 +295,6 @@ body {
 }
 
 #layout-sidebar .layout-menu > div a {
-    width: 50%;
     float: left;
     padding: 6px;
     box-sizing: border-box;
@@ -310,11 +311,11 @@ body {
 
 #layout-sidebar .layout-menu {
     overflow-y: auto;
-    width: 300px;
+    width: 150px;
 }
 
 #layout-content {
-    margin-left: 300px;
+    margin-left: 150px;
     padding-top: 70px;
     background-color: #ffffff;
 }
@@ -340,8 +341,8 @@ body {
 }
 
 .content-section.introduction {
-    background-image: linear-gradient(to left, #2bc0ec, #1b81d7);
-    color: #ffffff;
+  background-image: linear-gradient(to left, #DBB1CC, #C0067D);
+  color: #ffffff;
 }
 
 .content-section:first-of-type > div > span {
@@ -359,8 +360,13 @@ body {
 }
 
 .layout-footer {
-    font-size: 14px;
-    color: #84939f;
+  font-size: 14px;
+  color: #84939f;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  bottom: 0;
 }
 
 .layout-footer .footer-links {

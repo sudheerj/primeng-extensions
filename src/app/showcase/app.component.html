@@ -5,7 +5,7 @@
         </a>
 
         <a href="#" class="logo" [routerLink]="['/']">
-            <img alt="logo" src="assets/showcase/images/logo.png" />
+            <h1 style="color: #ffffff;margin-top: 0px">PrimeNG Extensions</h1>
         </a>
 
         <ul class="topbar-menu">
@@ -37,9 +37,15 @@
     <div id="layout-sidebar" [ngClass]="{'active': menuActive}">
         <div class="layout-menu">
             <div>
+              <div>
                 <a [routerLink]="['/badge']" (click)="menuActive = false">&#9679; Badge</a>
+              </div>
+              <div>
                 <a [routerLink]="['/qrcode']" (click)="menuActive = false">&#9679; QRCode</a>
+              </div>
+              <div>
                 <a [routerLink]="['/wizard']" (click)="menuActive = false">&#9679; Wizard</a>
+              </div>
             </div>
 
         </div>

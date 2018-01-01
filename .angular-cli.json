@@ -21,6 +21,7 @@
         "styles.css"
       ],
       "scripts": [
+        "../node_modules/qrious/dist/qrious.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

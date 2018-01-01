@@ -1,4 +1,5 @@
 import {
+  NgModule,
     Component,
     ElementRef,
     OnDestroy,
@@ -6,7 +7,7 @@ import {
     OnInit,
     ViewEncapsulation
 } from '@angular/core';
-
+import {CommonModule} from '@angular/common';
 
 @Component({
     selector: 'pe-badge',
@@ -18,7 +19,7 @@ import {
             {{data}}
       </span>
     </div>`,
-    encapsulation: ViewEncapsulation.None
+    encapsulation: ViewEncapsulation.None,
 })
 export class Badge implements OnDestroy, OnInit{
 
@@ -57,5 +58,14 @@ export class Badge implements OnDestroy, OnInit{
 
     }
 
+}
+
+
+@NgModule({
+  imports: [CommonModule],
+  exports: [Badge],
+  declarations: [Badge]
+})
+export class BadgeModule {
 }
 

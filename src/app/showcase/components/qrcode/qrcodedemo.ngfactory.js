@@ -6,7 +6,7 @@
 */ 
 import * as i0 from "@angular/core";
 import * as i1 from "../../../components/qrcode/qrcode.component.ngfactory";
-import * as i2 from "../../../components/qrcode/qrcode.component";
+import * as i2 from "../../../components/qrcode/qrcode";
 import * as i3 from "./qrcodedemo";
 var styles_QRCodeDemo = [];
 var RenderType_QRCodeDemo = i0.ɵcrt({ encapsulation: 2, styles: styles_QRCodeDemo, data: {} });

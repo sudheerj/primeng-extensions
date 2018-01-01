@@ -6,7 +6,7 @@
 */ 
 import * as i0 from "@angular/core";
 import * as i1 from "../../../components/badge/badge.component.ngfactory";
-import * as i2 from "../../../components/badge/badge.component";
+import * as i2 from "../../../components/badge/badge";
 import * as i3 from "primeng/components/dom/domhandler";
 import * as i4 from "primeng/components/button/button";
 import * as i5 from "./badgedemo";

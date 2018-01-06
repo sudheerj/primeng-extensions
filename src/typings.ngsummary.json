@@ -1,1 +1,0 @@
-{"moduleName":null,"summaries":[{"symbol":{"__symbol":0,"members":[]},"metadata":{"__symbolic":"error","message":"Variable not initialized","line":1,"character":12}},{"symbol":{"__symbol":1,"members":[]},"metadata":{"__symbolic":"interface"}}],"symbols":[{"__symbol":0,"name":"module","filePath":"./typings"},{"__symbol":1,"name":"NodeModule","filePath":"./typings"}]}

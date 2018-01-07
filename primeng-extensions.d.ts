@@ -1,4 +1,4 @@
-export * from './components/wizard/wizard';
-export * from './components/qrcode/qrcode';
-export * from './components/badge/badge';
+export * from './components/wizard/wizard.js';
+export * from './components/qrcode/qrcode.js';
+export * from './components/badge/badge.js';
 

@@ -11,6 +11,22 @@ npm install primeng-extensions --save
 - QRCode
 - Badge
 
+### Demo
+``` shell
+npm install 
+sass --update src/assets/components
+gulp build-assets
+npm start
+```
+
+Now visit the address below to run the demos locally;
+``` shell
+http://localhost:4200
+```
+<hr/>
+
+To encourage us and if you like the project then click start(💫)
+<hr/> 
 
 [npm-image]: https://img.shields.io/npm/v/primeng-extensions.svg
 [npm-url]: https://npmjs.org/package/primeng-extensions

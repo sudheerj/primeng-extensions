@@ -12,6 +12,7 @@ npm install primeng-extensions --save
 - Badge
 
 ### Demo
+Github Pages: https://sudheerj.github.io/primeng-extensions
 ``` shell
 npm install 
 sass --update src/assets/components

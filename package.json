@@ -80,6 +80,7 @@
     "clean": "del-cli aot components/**/*.d.ts components/**/*.js components/**/*.metadata.json",
     "prengc": "npm run clean",
     "ngc": "ngc -p tsconfig-aot.json",
-    "update": "npm run ngc && npm version patch && npm publish && npm run clean"
+    "update": "npm run ngc && npm version patch && npm publish && npm run clean",
+    "deploy": "ng build --prod --output-path docs --base-href primeng-extensions"
   }
 }

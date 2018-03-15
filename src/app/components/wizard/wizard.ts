@@ -116,7 +116,7 @@ export class StepsComponent implements AfterContentInit, OnChanges {
         currentValue: this.activeIndex,
         previousValue: this.activeIndex + 1,
         firstChange: false,
-        isFirstChange: () => false
+        isFirstChange: function(){ return false; }
       }
     });
   }
@@ -131,7 +131,7 @@ export class StepsComponent implements AfterContentInit, OnChanges {
         currentValue: this.activeIndex,
         previousValue: this.activeIndex - 1,
         firstChange: false,
-        isFirstChange: () => false
+        isFirstChange: function(){ return false; }
       }
     });
   }

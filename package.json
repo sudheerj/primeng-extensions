@@ -1,6 +1,6 @@
 {
   "name": "primeng-extensions",
-  "version": "0.0.41",
+  "version": "0.0.42",
   "license": "MIT",
   "author": {
     "name": "Sudheer Jonna",
@@ -39,7 +39,7 @@
     "core-js": "~2.5.3",
     "del": "2.2.0",
     "del-cli": "~1.1.0",
-    "font-awesome": "~4.7.0",
+    "font-awesome": "4.7.0",
     "gulp": "^3.9.1",
     "gulp-concat": "2.6.0",
     "gulp-flatten": "^0.2.0",

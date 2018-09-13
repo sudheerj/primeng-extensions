@@ -36,9 +36,9 @@ export class StepComponent {
              [class]="styleClass" [readonly]="false"></p-steps>
     <ng-content></ng-content>
     <button pButton type="text" *ngIf="activeIndex > 0"
-            (click)="previous()" icon="fa-hand-o-left" label="Previous"></button>
+            (click)="previous()" icon="fa fa-hand-o-left" label="Previous"></button>
     <button pButton type="text" *ngIf="activeIndex < items.length - 1"
-            (click)="next()" icon="fa-hand-o-right" iconPos="right" label="Next"></button>
+            (click)="next()" icon="fa fa-hand-o-right" iconPos="right" label="Next"></button>
   `
 })
 export class StepsComponent implements AfterContentInit, OnChanges {

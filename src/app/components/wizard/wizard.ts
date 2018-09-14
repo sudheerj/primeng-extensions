@@ -36,9 +36,10 @@ export class StepComponent {
              [class]="styleClass" [readonly]="false"></p-steps>
     <ng-content></ng-content>
     <button pButton type="text" *ngIf="activeIndex > 0"
-            (click)="previous()" icon="fa fa-hand-o-left" label="Previous"></button>
+            (click)="previous()" icon="fa fa-hand-o-left" label="Previous" class="buttonsPadding"></button>
     <button pButton type="text" *ngIf="activeIndex < items.length - 1"
-            (click)="next()" icon="fa fa-hand-o-right" iconPos="right" label="Next"></button>
+            (click)="next()" icon="fa fa-hand-o-right" iconPos="right" label="Next">
+    </button>
   `
 })
 export class StepsComponent implements AfterContentInit, OnChanges {
@@ -66,7 +67,7 @@ export class StepsComponent implements AfterContentInit, OnChanges {
 
       this.items[index] = {
         label: step.label,
-        command: (event: any) => {
+        command: () => {
           // hide all steps
           this.steps.toArray().forEach((s: StepComponent) => s.active = false);
 
@@ -116,7 +117,7 @@ export class StepsComponent implements AfterContentInit, OnChanges {
         currentValue: this.activeIndex,
         previousValue: this.activeIndex + 1,
         firstChange: false,
-        isFirstChange: function(){ return false; }
+        isFirstChange: returnIsFirstChange
       }
     });
   }
@@ -131,10 +132,14 @@ export class StepsComponent implements AfterContentInit, OnChanges {
         currentValue: this.activeIndex,
         previousValue: this.activeIndex - 1,
         firstChange: false,
-        isFirstChange: function(){ return false; }
+        isFirstChange: returnIsFirstChange
       }
     });
   }
+}
+
+export function returnIsFirstChange() {
+  return false;
 }
 
 @NgModule({

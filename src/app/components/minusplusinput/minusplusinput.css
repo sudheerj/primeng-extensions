@@ -1,0 +1,28 @@
+.ui-minusplus {
+  display: table;
+  text-align: center;
+  position: relative;
+}
+
+.ui-minusplus> .ui-button {
+  min-width: 3rem;
+  min-height: 2rem;
+  margin-right: 0em;
+}
+
+.ui-minusplus-vertical {
+  display: inline-block;
+}
+
+.ui-minusplus-value {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+
+.ui-minusplus-vertical>.ui-minusplus-value {
+  padding: 5px 10px;
+  display: block;
+}
+
+

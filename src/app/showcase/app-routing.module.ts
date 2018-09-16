@@ -7,7 +7,8 @@ import { NgModule } from '@angular/core';
             {path: 'badge', loadChildren: './components/badge/badgedemo.module#BadgeDemoModule'},
             {path: 'qrcode', loadChildren: './components/qrcode/qrcodedemo.module#QRCodeDemoModule'},
             {path: 'wizard', loadChildren: './components/wizard/wizarddemo.module#WizardDemoModule'},
-        ])    
+            {path: 'minusplusinput', loadChildren: './components/minusplusinput/minusplusinputdemo.module#MinusPlusInputDemoModule'},
+        ])
     ],
     exports: [RouterModule]
 })

@@ -239,7 +239,7 @@ body {
 }
 
 #layout-sidebar .layout-menu > a img {
-    width: 20px;
+    width: 30px;
     height: auto;
     float: left;
 }
@@ -311,7 +311,7 @@ body {
 
 #layout-sidebar .layout-menu {
     overflow-y: auto;
-    width: 150px;
+    width: 160px;
 }
 
 #layout-content {

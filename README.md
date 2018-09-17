@@ -1,15 +1,10 @@
 ## An extension library for PrimeNG components
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] <!--[![Coverage Status][coveralls-image]][coveralls-url]--> [![npm](https://img.shields.io/npm/dt/primeng-extensions.svg)]() [![Dependency Status][daviddm-image]][daviddm-url] ![Crates.io](https://img.shields.io/github/license/mashape/apistatus.svg)
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![npm](https://img.shields.io/npm/dt/primeng-extensions.svg)]() [![Dependency Status][daviddm-image]][daviddm-url] ![Crates.io](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 ### Install
 ``` shell
 npm install primeng-extensions --save
 ```
-
-### Components
-- Wizard
-- QRCode
-- Badge
 
 ### Demo
 Github Pages: https://sudheerj.github.io/primeng-extensions

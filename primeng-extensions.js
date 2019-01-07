@@ -7,3 +7,4 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./components/wizard/wizard"));
 __export(require("./components/qrcode/qrcode"));
 __export(require("./components/badge/badge"));
+__export(require("./components/minusplusinput/minusplusinput"));

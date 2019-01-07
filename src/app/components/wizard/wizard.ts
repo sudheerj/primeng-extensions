@@ -107,7 +107,7 @@ export class StepsComponent implements AfterContentInit, OnChanges {
     }
   }
 
-  private previous() {
+  previous() {
     this.activeIndex--;
     // emit currently selected index (two-way binding)
     this.activeIndexChange.emit(this.activeIndex);
@@ -122,7 +122,7 @@ export class StepsComponent implements AfterContentInit, OnChanges {
     });
   }
 
-  private next() {
+  next() {
     this.activeIndex++;
     // emit currently selected index (two-way binding)
     this.activeIndexChange.emit(this.activeIndex);

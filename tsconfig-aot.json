@@ -18,7 +18,8 @@
     "src/app/components/**/*"
   ],
   "angularCompilerOptions": {
-   "genDir": "aot",
-   "skipMetadataEmit" : false
- }
+    "genDir": "aot",
+    "skipMetadataEmit" : false,
+    "fullTemplateTypeCheck": true
+  }
 }

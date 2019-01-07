@@ -19,6 +19,6 @@
     ]
   },
   "include": [
-      "src/app/components/**/*"
+    "src/app/components/**/*"
   ]
 }

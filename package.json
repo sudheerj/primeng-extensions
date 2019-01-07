@@ -1,6 +1,6 @@
 {
   "name": "primeng-extensions",
-  "version": "0.0.45",
+  "version": "1.0.0",
   "license": "MIT",
   "author": {
     "name": "Sudheer Jonna",
@@ -61,6 +61,7 @@
     "primeflex": "1.0.0-rc.1",
     "primeicons": "1.0.0-beta.10",
     "primeng": "6.1.3",
+    "primeng-extensions": "1.0.0",
     "prismjs": "1.6.0",
     "protractor": "5.1.2",
     "qrious": "^4.0.2",
@@ -80,6 +81,10 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "tsc": "tsc",
+    "build-components": "ngc -p tsconfig-aot.json",
+    "build-assets": "gulp build-assets",
+    "build-styles": "node-sass src/assets/components -o src/assets/components",
+    "build-redistribute": "npm run build-components && npm run build-assets && npm run build-styles",
     "clean": "del-cli aot components/**/*.d.ts components/**/*.js components/**/*.metadata.json",
     "prengc": "npm run clean",
     "ngc": "ngc -p tsconfig-aot.json",

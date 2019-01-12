@@ -1,7 +1,6 @@
 import {
   NgModule,
     Component,
-    ElementRef,
     OnDestroy,
     Input,
     OnInit,
@@ -32,9 +31,6 @@ export class Badge implements OnDestroy, OnInit{
     @Input() backgroundColor: string = '';
 
     @Input() badgeClass: string;
-
-    constructor(public el: ElementRef) {
-    }
 
     data() {
         if(this.dot) {

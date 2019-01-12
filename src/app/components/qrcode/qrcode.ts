@@ -4,8 +4,6 @@ import {
   ElementRef,
   OnDestroy,
   Input,
-  Output,
-  EventEmitter,
   OnInit,
   ViewChild
 } from '@angular/core';
@@ -46,11 +44,8 @@ export class QRCode implements OnDestroy, OnInit {
 
   initialized: boolean;
 
-  constructor(public el: ElementRef) {
-    this.initialized = false;
-  }
-
   ngOnInit() {
+    this.initialized = false;
   }
 
   ngAfterViewChecked() {

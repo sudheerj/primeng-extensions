@@ -362,7 +362,7 @@ body {
 .layout-footer {
   font-size: 14px;
   color: #84939f;
-  position: absolute;
+  position: fixed;
   text-align: center;
   width: 100%;
   left: 0;

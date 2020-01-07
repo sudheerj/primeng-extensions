@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Message} from 'primeng/components/common/api';
+import {MessageService} from 'primeng/api';
 
 @Component({
     templateUrl: './wizarddemo.html'
@@ -11,8 +11,6 @@ export class WizardDemo {
     lastName: string;
     address: string;
 
-    msgs: Message[] = [];
-
     next() {
         this.activeIndex++;
     }
@@ -22,7 +20,9 @@ export class WizardDemo {
     }
 
     onChange(label: string) {
-        this.msgs.length = 0;
-        this.msgs.push({severity: 'info', summary: label});
+        this.messageService.add({severity: 'info', summary: label});
     }
+
+  constructor(private messageService: MessageService) {
+  }
 }

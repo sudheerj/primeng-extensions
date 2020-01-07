@@ -10,10 +10,10 @@ import {
   Output,
   NgModule
 } from '@angular/core';
-import {MenuItem} from 'primeng/components/common/api';
+import {MenuItem} from 'primeng/api';
 import {CommonModule} from '@angular/common';
-import {ButtonModule} from 'primeng/components/button/button';
-import {StepsModule} from 'primeng/components/steps/steps';
+import {ButtonModule} from 'primeng/button';
+import {StepsModule} from 'primeng/steps';
 
 @Component({
   selector: 'pe-step',

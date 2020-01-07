@@ -4,8 +4,8 @@ import {FormsModule}    from '@angular/forms'
 import {MinusPlusInputDemo} from './minusplusinputdemo';
 import {MinusPlusInputDemoRoutingModule} from './minusplusinputdemo-routing.module';
 import {MinusPlusInputModule} from '../../../components/minusplusinput/minusplusinput';
-import {CodeHighlighterModule} from 'primeng/components/codehighlighter/codehighlighter';
-import {ButtonModule} from 'primeng/components/button/button';
+import {CodeHighlighterModule} from 'primeng/codehighlighter';
+import {ButtonModule} from 'primeng/button';
 
 @NgModule({
   imports: [

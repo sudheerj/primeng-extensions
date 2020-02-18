@@ -8,6 +8,7 @@ import {InputTextModule} from 'primeng/inputtext';
 import {ToastModule} from 'primeng/toast';
 import {FormsModule} from '@angular/forms';
 import {CodeHighlighterModule} from 'primeng/codehighlighter';
+import {MessageService} from 'primeng/api';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import {CodeHighlighterModule} from 'primeng/codehighlighter';
   ],
   declarations: [
     WizardDemo
-  ]
+  ],
+  providers: [MessageService]
 })
 export class WizardDemoModule {
 }

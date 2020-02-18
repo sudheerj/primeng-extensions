@@ -4,8 +4,8 @@ import {FormsModule}    from '@angular/forms'
 import {BadgeDemo} from './badgedemo';
 import {BadgeDemoRoutingModule} from './badgedemo-routing.module';
 import {BadgeModule} from '../../../components/badge/badge';
-import {CodeHighlighterModule} from 'primeng/components/codehighlighter/codehighlighter';
-import {ButtonModule} from 'primeng/components/button/button';
+import {CodeHighlighterModule} from 'primeng/codehighlighter';
+import {ButtonModule} from 'primeng/button';
 
 @NgModule({
   imports: [

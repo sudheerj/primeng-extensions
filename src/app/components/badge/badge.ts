@@ -20,7 +20,7 @@ import {CommonModule} from '@angular/common';
     </div>`,
     encapsulation: ViewEncapsulation.None,
 })
-export class Badge implements OnDestroy, OnInit{
+export class BadgeComponent implements OnDestroy, OnInit {
 
     @Input() value: any;
 
@@ -28,15 +28,15 @@ export class Badge implements OnDestroy, OnInit{
 
     @Input() dot: boolean;
 
-    @Input() backgroundColor: string = '';
+    @Input() backgroundColor = '';
 
     @Input() badgeClass: string;
 
     data() {
-        if(this.dot) {
+        if (this.dot) {
             return;
         }
-        if(typeof this.value === 'number' && typeof this.max === 'number') {
+        if (typeof this.value === 'number' && typeof this.max === 'number') {
             return this.max < this.value ? `${this.max}+` : this.value;
         } else {
             return this.value;
@@ -58,8 +58,8 @@ export class Badge implements OnDestroy, OnInit{
 
 @NgModule({
   imports: [CommonModule],
-  exports: [Badge],
-  declarations: [Badge]
+  exports: [BadgeComponent],
+  declarations: [BadgeComponent]
 })
 export class BadgeModule {
 }

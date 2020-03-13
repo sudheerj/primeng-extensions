@@ -26,7 +26,7 @@ import {StepsModule} from 'primeng/steps';
 export class StepComponent {
   @Input() styleClass: string;
   @Input() label: string;
-  active: boolean = false;
+  active = false;
 }
 
 @Component({
@@ -43,7 +43,7 @@ export class StepComponent {
   `
 })
 export class StepsComponent implements AfterContentInit, OnChanges {
-  @Input() activeIndex: number = 0;
+  @Input() activeIndex = 0;
   @Input() styleClass: string;
   @Input() stepClass: string;
   @Output() activeIndexChange: EventEmitter<any> = new EventEmitter();
@@ -90,12 +90,12 @@ export class StepsComponent implements AfterContentInit, OnChanges {
       return;
     }
 
-    for (let prop in changes) {
+    for (const prop in changes) {
       if (prop === 'activeIndex') {
-        let curIndex = changes[prop].currentValue;
+        const curIndex = changes[prop].currentValue;
         this.steps.toArray().forEach((step: StepComponent, index: number) => {
           // show / hide the step
-          let selected = index === curIndex;
+          const selected = index === curIndex;
           step.active = selected;
 
           if (selected) {

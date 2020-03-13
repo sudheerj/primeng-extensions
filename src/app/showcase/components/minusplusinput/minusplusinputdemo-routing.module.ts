@@ -1,11 +1,11 @@
-import {NgModule}     from '@angular/core';
+import {NgModule} from '@angular/core';
 import {RouterModule} from '@angular/router'
-import {MinusPlusInputDemo} from './minusplusinputdemo';
+import {MinusPlusInputDemoComponent} from './minusplusinputdemo';
 
 @NgModule({
 	imports: [
 		RouterModule.forChild([
-			{path:'',component: MinusPlusInputDemo}
+			{ path: '', component: MinusPlusInputDemoComponent}
 		])
 	],
 	exports: [

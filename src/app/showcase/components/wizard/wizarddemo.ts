@@ -4,9 +4,9 @@ import {MessageService} from 'primeng/api';
 @Component({
     templateUrl: './wizarddemo.html'
 })
-export class WizardDemo {
+export class WizardDemoComponent {
 
-    activeIndex: number = 0;
+    activeIndex = 0;
     firstName: string;
     lastName: string;
     address: string;

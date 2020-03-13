@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {WizardDemo} from './wizarddemo';
+import {WizardDemoComponent} from './wizarddemo';
 import {WizardDemoRoutingModule} from './wizarddemo-routing.module';
 import {WizardModule} from '../../../components/wizard/wizard';
 import {ButtonModule} from 'primeng/button';
@@ -22,7 +22,7 @@ import {MessageService} from 'primeng/api';
     CodeHighlighterModule
   ],
   declarations: [
-    WizardDemo
+    WizardDemoComponent
   ],
   providers: [MessageService]
 })

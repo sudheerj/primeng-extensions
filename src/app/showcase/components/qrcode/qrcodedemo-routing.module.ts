@@ -1,11 +1,11 @@
-import {NgModule}     from '@angular/core';
+import {NgModule} from '@angular/core';
 import {RouterModule} from '@angular/router'
-import {QRCodeDemo} from './qrcodedemo';
+import {QRCodeDemoComponent} from './qrcodedemo';
 
 @NgModule({
 	imports: [
 		RouterModule.forChild([
-			{path:'',component: QRCodeDemo}
+			{path: '', component: QRCodeDemoComponent}
 		])
 	],
 	exports: [

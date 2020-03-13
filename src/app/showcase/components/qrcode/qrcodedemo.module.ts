@@ -1,6 +1,6 @@
-import {NgModule}     from '@angular/core';
+import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {QRCodeDemo} from './qrcodedemo';
+import {QRCodeDemoComponent} from './qrcodedemo';
 import {QRCodeDemoRoutingModule} from './qrcodedemo-routing.module';
 import {QRCodeModule} from '../../../components/qrcode/qrcode';
 import {CodeHighlighterModule} from 'primeng/codehighlighter';
@@ -13,7 +13,7 @@ import {CodeHighlighterModule} from 'primeng/codehighlighter';
         CodeHighlighterModule,
 	],
 	declarations: [
-		QRCodeDemo
+    QRCodeDemoComponent
 	]
 })
 export class QRCodeDemoModule {}

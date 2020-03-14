@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms'
-import {MinusPlusInputDemo} from './minusplusinputdemo';
+import {MinusPlusInputDemoComponent} from './minusplusinputdemo';
 import {MinusPlusInputDemoRoutingModule} from './minusplusinputdemo-routing.module';
 import {MinusPlusInputModule} from '../../../components/minusplusinput/minusplusinput';
 import {CodeHighlighterModule} from 'primeng/codehighlighter';
@@ -17,7 +17,7 @@ import {ButtonModule} from 'primeng/button';
     CodeHighlighterModule
   ],
   declarations: [
-    MinusPlusInputDemo
+    MinusPlusInputDemoComponent
   ]
 })
 export class MinusPlusInputDemoModule {

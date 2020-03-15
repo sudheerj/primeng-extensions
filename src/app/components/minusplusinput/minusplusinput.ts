@@ -14,7 +14,7 @@ import {ButtonModule} from 'primeng/button';
 
 export const MINUSPLUSINPUT_VALUE_ACCESSOR: any = {
   provide: NG_VALUE_ACCESSOR,
-  useExisting: forwardRef(() => MinusPlusInput),
+  useExisting: forwardRef(() => MinusPlusInputComponent),
   multi: true
 };
 
@@ -35,7 +35,7 @@ export const MINUSPLUSINPUT_VALUE_ACCESSOR: any = {
   encapsulation: ViewEncapsulation.None,
   providers: [MINUSPLUSINPUT_VALUE_ACCESSOR]
 })
-export class MinusPlusInput implements OnDestroy, OnInit, ControlValueAccessor {
+export class MinusPlusInputComponent implements OnDestroy, OnInit, ControlValueAccessor {
 
   @Input() min = 0;
 
@@ -115,7 +115,9 @@ export class MinusPlusInput implements OnDestroy, OnInit, ControlValueAccessor {
 
   ngOnInit() {
     this.inputValue = this.value;
-    if (this.step < 1) this.step = 1;
+    if (this.step < 1) {
+      this.step = 1;
+    }
   }
 
   registerOnChange(fn: Function): void {
@@ -130,8 +132,8 @@ export class MinusPlusInput implements OnDestroy, OnInit, ControlValueAccessor {
 
 @NgModule({
   imports: [CommonModule, ButtonModule],
-  exports: [MinusPlusInput],
-  declarations: [MinusPlusInput]
+  exports: [MinusPlusInputComponent],
+  declarations: [MinusPlusInputComponent]
 })
 export class MinusPlusInputModule {
 }

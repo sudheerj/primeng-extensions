@@ -5,7 +5,7 @@ import {
   OnDestroy,
   Input,
   OnInit,
-  ViewChild
+  ViewChild, AfterViewChecked
 } from '@angular/core';
 import {CommonModule} from '@angular/common';
 
@@ -18,25 +18,25 @@ declare var QRious: any;
       <canvas #qrcode></canvas>
     </div>`
 })
-export class QRCode implements OnDestroy, OnInit {
+export class QRCodeComponent implements OnDestroy, OnInit, AfterViewChecked {
 
   @Input() value: string;
 
-  @Input() background: string = 'white';
+  @Input() background = 'white';
 
-  @Input() backgroundAlpha: number = 1.0;
+  @Input() backgroundAlpha = 1.0;
 
-  @Input() foreground: string = 'black';
+  @Input() foreground = 'black';
 
-  @Input() foregroundAlpha: number = 1.0;
+  @Input() foregroundAlpha = 1.0;
 
-  @Input() level: string = 'L';
+  @Input() level = 'L';
 
-  @Input() mime: string = 'image/png';
+  @Input() mime = 'image/png';
 
   @Input() padding: number = null;
 
-  @Input() size: number = 100;
+  @Input() size = 100;
 
   @ViewChild('qrcode') containerViewChild: ElementRef;
 
@@ -56,7 +56,7 @@ export class QRCode implements OnDestroy, OnInit {
 
   init() {
     this.initialized = true;
-    let qrObject = {
+    const qrObject = {
       element: this.containerViewChild.nativeElement,
       background: this.background,
       backgroundAlpha: this.backgroundAlpha,
@@ -80,8 +80,8 @@ export class QRCode implements OnDestroy, OnInit {
 
 @NgModule({
   imports: [CommonModule],
-  exports: [QRCode],
-  declarations: [QRCode]
+  exports: [QRCodeComponent],
+  declarations: [QRCodeComponent]
 })
 export class QRCodeModule {
 }

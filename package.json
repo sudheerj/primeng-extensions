@@ -72,7 +72,7 @@
     "tslint": "~5.15.0",
     "typescript": "~3.6.4",
     "web-animations-js": "^2.3.2",
-    "xlsx": "^0.15.1",
+    "xlsx": "^0.17.0",
     "zone.js": "~0.10.2",
     "primeng": "9.0.0",
     "webpack": "^4.41.5"
